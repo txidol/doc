@@ -6,7 +6,7 @@ layout: default
         <div class="page-header">
             <h1>{{ page.title }}</h1>
             <small>
-	        	发表于：{{ page.date | date: "%Y-%m-%d" }}
+	        	创建于：{{ page.date | date: "%Y-%m-%d" }}
 	        	|
 	        	分类：
 	        	{% for category in page.categories %}
@@ -28,12 +28,11 @@ layout: default
             <li class="next"><a href="{{ site.ctx }}{{ page.next.url }}">{{ page.next.title | truncatewords:5 }}&nbsp;&raquo;</a></li>
             {% endif %}
         </ul>
-		<div class="ds-thread" data-thread-key="{{ page.id }}" data-title="{{ page.title }}" ></div>
     </div>
     <div class="col-md-3">
     	<div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title">相关文章</h3>
+                <h3 class="panel-title">相关文档</h3>
             </div>
             <div class="list-group">
             	{% for post in site.related_posts limit:5 %}

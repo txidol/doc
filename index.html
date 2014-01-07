@@ -14,7 +14,7 @@ navId: home
             <div class="panel-body">{{ post.excerpt }}</div>
             <div class="panel-footer">
                 <small>
-                	发表于：{{ post.date | date: "%Y-%m-%d" }}
+                	创建于：{{ post.date | date: "%Y-%m-%d" }}
                 	|
                 	分类：
                 	{% for category in post.categories %}
@@ -44,7 +44,7 @@ navId: home
     <div class="col-md-3">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title">文章分类</h3>
+                <h3 class="panel-title">文档分类</h3>
             </div>
             <ul class="nav nav-pills nav-stacked">
                 {% for category in site.categories %}
@@ -56,12 +56,6 @@ navId: home
                 </li>
                 {% endfor %}
             </ul>
-        </div>
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title">最新评论</h3>
-            </div>
-            <ul class="ds-recent-comments" data-num-items="10"></ul>
         </div>
     </div>
 </div>
