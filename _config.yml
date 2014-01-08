@@ -5,7 +5,7 @@ excerpt_separator:  <!-- more -->
 paginate:           6
 lsi:                true
 
-name:               Doc Blog
+name:               Doc
 url:                http://jnoee.github.io
 ctx:                /doc
 description:        这是一个利用 Github + Jekyll + BootStrap 搭建起来的文档博客。
